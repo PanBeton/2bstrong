@@ -86,7 +86,7 @@ h2::after {
 
 .hero {
     position: relative;
-    background: url('bg.jpg') center/cover no-repeat fixed;
+    background: url('image2.jpg') center/cover no-repeat fixed;
     height: 100vh;
     display: flex;
     align-items: center;
