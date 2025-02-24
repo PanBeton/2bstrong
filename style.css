@@ -128,7 +128,6 @@ h2::after {
     width: 50%;
 }
 
-
 .trainer-img { 
     width: 150px; 
     height: 150px; 
@@ -168,6 +167,7 @@ h2::after {
 .offer-text p {
     font-size: 16px;
 }
+
 .gallery-img {
     width: 100%;
     height: 250px;
@@ -179,6 +179,40 @@ h2::after {
 .gallery-img:hover {
     transform: scale(1.03);
     opacity: 0.8;
+}
+
+.accordion-button {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #111;
+    color: #ffffff;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-item {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.accordion-body {
+    background-color: #222;
+    color: #ccc;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.accordion h2::after {
+    background: none;
 }
 
 
@@ -220,13 +254,6 @@ h2::after {
     transform: scale(1.1);
 }
 
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-
 @media (max-width: 768px) {
     .navbar.shrink {
         background: rgb(0, 0, 0)
@@ -239,4 +266,55 @@ h2::after {
     .offer-item img {
         max-width: 100%;
     }
+}
+/* Style dla pól formularza */
+.form-label {
+    font-weight: 500;
+    color: #bdbdbd;
+}
+
+.form-control {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    background-color: #333;
+    border-color: #cda000;
+    outline: none;
+    box-shadow: 0 0 8px rgba(205, 160, 0, 0.5);
+}
+
+/* Dostosowanie dla inputów typu number i date */
+input[type="number"], input[type="date"], input[type="email"], input[type="tel"], input[type="text"], textarea {
+    appearance: none;
+}
+
+/* Styl dla textarea */
+textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+/* Przycisk wysyłania */
+.btn-primary {
+    background-color: #cda000;
+    border: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #cda000;
+    box-shadow: 0 0 10px #cda000;
+}
+
+.btn-primary:active {
+    background-color: #cda000;
 }
