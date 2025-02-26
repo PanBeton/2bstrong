@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
-body { 
-    background-color: #1a1a1a; color: white; 
+body {
+    background-color: #1a1a1a;
+    color: white;
 }
 
 h2::after {
@@ -74,14 +75,17 @@ h2::after {
 
 /* Styl logo w nawigacji */
 .logo {
-    height: 50px; /* Dopasuj wysokość */
+    height: 50px;
+    /* Dopasuj wysokość */
     width: auto;
 }
 
 /* Po przewinięciu zmniejsza logo */
 .navbar.shrink .logo {
-    height: 35px; /* Zmniejszone logo */
-    transition: height 0.3s ease; /* Animacja przy przewijaniu */
+    height: 35px;
+    /* Zmniejszone logo */
+    transition: height 0.3s ease;
+    /* Animacja przy przewijaniu */
 }
 
 .hero {
@@ -92,6 +96,7 @@ h2::after {
     align-items: center;
     text-align: center;
 }
+
 .hero::before {
     content: "";
     position: absolute;
@@ -99,19 +104,30 @@ h2::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Przyciemnienie */
+    background: rgba(0, 0, 0, 0.7);
+    /* Przyciemnienie */
 }
+
 .hero .container {
     position: relative;
     z-index: 1;
 }
 
-.btn-strong { 
-    background-color: #cda000; 
-    border: none; 
+.btn-strong {
+    background-color: #cda000;
+    border: none;
 }
+
 .btn-strong:hover {
-     background-color: #a88b00; 
+    background-color: #a88b00;
+}
+
+section {
+    padding-bottom: 2%;
+}
+
+.about-section {
+    font-size: 20px;
 }
 
 .split-section {
@@ -120,31 +136,35 @@ h2::after {
     gap: 20px;
     padding: 50px 10%;
 }
+
 .split-section img {
     width: 50%;
     border-radius: 10px;
 }
+
 .split-section .text {
     width: 50%;
 }
 
-.trainer-img { 
-    width: 150px; 
-    height: 150px; 
-    border-radius: 50%; 
-    object-fit: cover; 
+.trainer-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .offer-section {
     text-align: center;
     padding: 50px 20px;
 }
+
 .offer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
 }
+
 .offer-item {
     display: flex;
     align-items: center;
@@ -152,18 +172,22 @@ h2::after {
     padding: 20px;
     gap: 20px;
 }
+
 .offer-item img {
     max-width: 550px;
     border-radius: 10px;
 }
+
 .offer-text {
     flex: 1;
     text-align: left;
 }
+
 .offer-text h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
+
 .offer-text p {
     font-size: 16px;
 }
@@ -189,13 +213,16 @@ h2::after {
     font-size: 18px;
     transition: background-color 0.3s ease-in-out;
 }
+
 .accordion-button:not(.collapsed) {
     background-color: #111;
     color: #ffffff;
 }
+
 .accordion-button:focus {
     box-shadow: none;
 }
+
 .accordion-item {
     background-color: #1e1e1e;
     border: 1px solid #333;
@@ -203,6 +230,7 @@ h2::after {
     margin-bottom: 10px;
     overflow: hidden;
 }
+
 .accordion-body {
     background-color: #222;
     color: #ccc;
@@ -221,6 +249,7 @@ h2::after {
     transform: translateY(20px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
+
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
@@ -236,6 +265,7 @@ h2::after {
     gap: 10px;
     z-index: 10;
 }
+
 .social-icon {
     width: 30px;
     height: 30px;
@@ -250,23 +280,11 @@ h2::after {
     margin-left: 20px;
     transition: transform 0.3s;
 }
+
 .social-icon:hover {
     transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-    .navbar.shrink {
-        background: rgb(0, 0, 0)
-    }
-    .offer-item {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    .offer-item img {
-        max-width: 100%;
-    }
-}
 /* Style dla pól formularza */
 .form-label {
     font-weight: 500;
@@ -285,12 +303,18 @@ h2::after {
 .form-control:focus {
     background-color: #333;
     border-color: #cda000;
+    color: #fff;
     outline: none;
     box-shadow: 0 0 8px rgba(205, 160, 0, 0.5);
 }
 
 /* Dostosowanie dla inputów typu number i date */
-input[type="number"], input[type="date"], input[type="email"], input[type="tel"], input[type="text"], textarea {
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+textarea {
     appearance: none;
 }
 
@@ -317,4 +341,26 @@ textarea {
 
 .btn-primary:active {
     background-color: #cda000;
+}
+
+@media (max-width: 768px) {
+    .navbar.shrink {
+        background: rgb(0, 0, 0)
+    }
+
+    
+    
+    .lead {
+        margin-top: 10%;
+    }
+
+    .offer-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .offer-item img {
+        max-width: 100%;
+    }
 }
